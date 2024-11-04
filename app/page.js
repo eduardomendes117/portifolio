@@ -65,29 +65,17 @@ export default function App() {
       </div>
 
       <section className="bg-black/30 backdrop-blur-sm rounded-2xl mt-10 mx-5 grid justify-items-center grid-cols-1 gap-5 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="w-96 h-48 bg-white">
+        <div className="w-96 h-48 bg-white"></div>
 
-        </div>
+        <div className="w-96 h-48 bg-white"></div>
 
-        <div className="w-96 h-48 bg-white">
+        <div className="w-96 h-48 bg-white"></div>
 
-        </div>
+        <div className="w-96 h-48 bg-white"></div>
 
-        <div className="w-96 h-48 bg-white">
+        <div className="w-96 h-48 bg-white"></div>
 
-        </div>
-
-        <div className="w-96 h-48 bg-white">
-
-        </div>
-
-        <div className="w-96 h-48 bg-white">
-
-        </div>
-
-        <div className="w-96 h-48 bg-white">
-
-        </div>
+        <div className="w-96 h-48 bg-white"></div>
       </section>
 
       <Particles />

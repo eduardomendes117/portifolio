@@ -17,21 +17,12 @@ const ParticlesComponent = (props) => {
       },
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
-
           onHover: {
             enable: true,
             mode: "repulse",
           },
         },
         modes: {
-          push: {
-            quantity: 10,
-          },
-
           repulse: {
             distance: 100,
           },
