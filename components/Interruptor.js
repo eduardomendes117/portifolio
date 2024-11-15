@@ -39,7 +39,7 @@ const StyledWrapper = styled.div`
     --toggle-size: 16px;
     appearance: none;
     margin-top: 6.4px;
-    width: 4.25em;
+    width: 3.25em;
     height: 2.125em;
     background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
     background-size: 205%;

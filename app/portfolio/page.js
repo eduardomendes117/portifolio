@@ -7,8 +7,8 @@ import { FaArrowLeft } from "react-icons/fa6";
 export default function Portfolio() {
   return (
     <>
-      <header className="flex justify-between items-center py-5 px-7 lg:px-10">
-        <Link className="rounded-full p-5 hover:bg-white/10" href="/">
+      <header className="flex justify-between items-center py-1 px-2 lg:px-10">
+        <Link className="rounded-full p-3 hover:bg-white/10" href="/">
           <FaArrowLeft className="text-2xl " />
         </Link>
 
