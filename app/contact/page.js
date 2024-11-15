@@ -18,7 +18,7 @@ export default function Portfolio() {
 
         <nav className="flex items-center gap-5 p-2">
           <Link
-            className="text-white/50 hover:text-white text-xl"
+            className="text-white/50 dark:text-black/60 dark:hover:text-black hover:text-white text-xl"
             href="/portfolio"
           >
             Portifólio
@@ -30,51 +30,51 @@ export default function Portfolio() {
 
       <section className="max-w-screen-xl mx-7 2xl:mx-auto my-20 flex gap-10 justify-center flex-wrap">
         <motion.li
-          className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
+          className="rounded-xl border dark:border-black/60 border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <Link href="https://www.linkedin.com/in/eduardo-mendes-26538030b/" target="_blank">
-            <FaLinkedinIn className="fill-white/50 hover:fill-white text-4xl" />
+            <FaLinkedinIn className="fill-white/50 dark:fill-black hover:fill-white text-4xl" />
           </Link>
           <h2 className="font-bold text-lg flex justify-between">
             @eduardomendesdeveloper
           </h2>
 
-          <p className="text-ellipsis text-white/40">Linkedin</p>
+          <p className="text-ellipsis text-white/40 dark:text-black/60">Linkedin</p>
         </motion.li>
 
         <motion.li
-          className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
+          className="rounded-xl border dark:border-black/60 border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <Link href="mailto:eduardo12mendes2016@gmail.com" target="_blank">
-            <MdEmail className="fill-white/50 hover:fill-white text-4xl" />
+            <MdEmail className="fill-white/50 dark:fill-black hover:fill-white text-4xl" />
           </Link>
           <h2 className="font-bold text-lg flex justify-between">
             contato@eduardomendes
           </h2>
 
-          <p className="text-ellipsis text-white/40">E-mail</p>
+          <p className="text-ellipsis text-white/40 dark:text-black/60">E-mail</p>
         </motion.li>
 
         <motion.li
-          className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
+          className="rounded-xl border dark:border-black/60 border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
           <Link href="https://github.com/eduardomendes117" target="_blank">
-            <RiGithubLine className="fill-white/50 hover:fill-white text-4xl" />
+            <RiGithubLine className="fill-white/50 dark:fill-black hover:fill-white text-4xl" />
           </Link>
           <h2 className="font-bold text-lg flex justify-between">
             @eduardomendes117
           </h2>
 
-          <p className="text-ellipsis text-white/40">Github</p>
+          <p className="text-ellipsis text-white/40 dark:text-black/60">Github</p>
         </motion.li>
       </section>
     </>

@@ -11,6 +11,12 @@ const Switch = () => {
   };
 
   useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
     document.documentElement.style.setProperty(
       "--background",
       isDarkMode ? "#ededed" : "#0a0a0a"

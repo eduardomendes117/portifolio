@@ -28,7 +28,7 @@ export default function Home() {
         </motion.h1>
 
         <motion.h2
-          className="border border-white/10 rounded-full py-1 px-3 backdrop-blur-sm"
+          className="border dark:border-black/60 dark:bg-black/5 border-white/10 rounded-full py-1 px-3 backdrop-blur-sm"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}

@@ -135,7 +135,7 @@ export default function Portfolio() {
 
         <nav className="flex items-center gap-5 p-2">
           <Link
-            className="text-white/50 hover:text-white text-xl"
+            className="text-white/50 dark:text-black/50 dark:hover:text-black hover:text-white text-xl"
             href="/contact"
           >
             Contato
@@ -155,7 +155,7 @@ export default function Portfolio() {
           Projetos
         </motion.h1>
         <motion.p
-          className="text-white/50"
+          className="text-white/50 dark:text-black"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
@@ -174,8 +174,8 @@ export default function Portfolio() {
               <motion.button
                 key={category}
                 className={`${
-                  activeCategory === category ? "bg-white/20" : "hover:bg-white/20"
-                } border border-white/10 py-1 px-3 rounded-full`}
+                  activeCategory === category ? "bg-white/20 dark:bg-black/20" : "hover:bg-white/20 dark:bg-transparent hover:dark:bg-black/10"
+                } border border-white/10 dark:border-black/10 py-1 px-3 rounded-full`}
                 onClick={() => setActiveCategory(category)}
                 whileHover={{ scale: 1.05 }}  // Hover animado
                 whileTap={{ scale: 0.95 }}   // Click animado
@@ -187,7 +187,7 @@ export default function Portfolio() {
           )}
         </motion.nav>
 
-        <hr className="opacity-10 my-10" />
+        <hr className="opacity-10 dark:opacity-100 my-10" />
 
         <motion.ul
           className="flex justify-center flex-wrap gap-10"
@@ -203,7 +203,7 @@ export default function Portfolio() {
             .map((project) => (
               <motion.li
                 key={project.name}
-                className="rounded-xl border border-white/50 hover:border-white w-96 p-5"
+                className="rounded-xl border dark:border-black/20  border-white/50 hover:border-white w-96 p-5"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
@@ -212,15 +212,15 @@ export default function Portfolio() {
                   {project.name}
                   <ul className="flex items-center gap-3">
                     <Link href={project.github} target="_blank">
-                      <RiGithubLine className="fill-white/50 hover:fill-white text-2xl" />
+                      <RiGithubLine className="dark:fill-black fill-white/50 hover:fill-white text-2xl" />
                     </Link>
                     <Link href={project.live} target="_blank">
-                      <FaExternalLinkAlt className="fill-white/50 hover:fill-white" />
+                      <FaExternalLinkAlt className="fill-white/50 dark:fill-black hover:fill-white" />
                     </Link>
                   </ul>
                 </h2>
 
-                <p className="text-ellipsis text-white/40 py-3">
+                <p className="text-ellipsis text-white/40 dark:text-black/60 py-3">
                   {project.description}
                 </p>
 
