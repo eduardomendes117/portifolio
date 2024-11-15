@@ -30,7 +30,15 @@ export default function Portfolio() {
           Alguns projetos desemvolvidos em Cursos e Pessoal.
         </p>
 
-        <hr className="opacity-10 my-14" />
+        <nav className="flex flex-wrap gap-3 mt-5">
+          <button className="active: bg-white/20 border border-white/10 py-1 px-3 rounded-full">Destaque</button>
+          <button className="border border-white/10 hover:bg-white/20 py-1 px-3 rounded-full">Alura</button>
+          <button className="border border-white/10 hover:bg-white/20 py-1 px-3 rounded-full">Curso em Video</button>
+          <button className="border border-white/10 hover:bg-white/20 py-1 px-3 rounded-full">Pessoal</button>
+          <button className="border border-white/10 hover:bg-white/20 py-1 px-3 rounded-full">Todos</button>
+        </nav>
+
+        <hr className="opacity-10 my-10" />
 
         <ul className="flex justify-center flex-wrap gap-10">
           <li className="rounded-xl border border-white/50 hover:border-white w-96 p-5">

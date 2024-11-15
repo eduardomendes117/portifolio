@@ -27,7 +27,7 @@ export default function Portfolio() {
 
       <section className="max-w-screen-xl mx-7 2xl:mx-auto my-20 flex gap-10 justify-center flex-wrap">
         <li className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3">
-          <Link href="www.linkedin.com/in/eduardomendesdeveloper" target="_blank">
+          <Link href="https://www.linkedin.com/in/eduardo-mendes-26538030b/" target="_blank">
             <FaLinkedinIn className="fill-white/50 hover:fill-white text-4xl" />
           </Link>
           <h2 className="font-bold text-lg flex justify-between">

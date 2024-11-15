@@ -5,7 +5,7 @@ import Logo from "@/public/logo.svg";
 
 export default function Navbar() {
   return (
-    <header className="flex justify-between py-5 px-7 lg:px-10">
+    <header className="flex justify-between py-2 px-3 lg:px-10">
       {/* <Image src={Logo} alt="Logo" /> */}
 
       <nav className="flex gap-5 text-white/50">
