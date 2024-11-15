@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Switch from "@/components/Interruptor";
 import { RiGithubLine } from "react-icons/ri";
@@ -26,7 +29,12 @@ export default function Portfolio() {
       </header>
 
       <section className="max-w-screen-xl mx-7 2xl:mx-auto my-20 flex gap-10 justify-center flex-wrap">
-        <li className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3">
+        <motion.li
+          className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <Link href="https://www.linkedin.com/in/eduardo-mendes-26538030b/" target="_blank">
             <FaLinkedinIn className="fill-white/50 hover:fill-white text-4xl" />
           </Link>
@@ -35,9 +43,14 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-ellipsis text-white/40">Linkedin</p>
-        </li>
+        </motion.li>
 
-        <li className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3">
+        <motion.li
+          className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
           <Link href="mailto:eduardo12mendes2016@gmail.com" target="_blank">
             <MdEmail className="fill-white/50 hover:fill-white text-4xl" />
           </Link>
@@ -46,9 +59,14 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-ellipsis text-white/40">E-mail</p>
-        </li>
+        </motion.li>
 
-        <li className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3">
+        <motion.li
+          className="rounded-xl border border-white/50 hover:border-white w-96 h-64 p-5 flex flex-col justify-center items-center gap-3"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           <Link href="https://github.com/eduardomendes117" target="_blank">
             <RiGithubLine className="fill-white/50 hover:fill-white text-4xl" />
           </Link>
@@ -57,7 +75,7 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-ellipsis text-white/40">Github</p>
-        </li>
+        </motion.li>
       </section>
     </>
   );
