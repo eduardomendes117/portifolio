@@ -34,6 +34,20 @@ export default function Portfolio() {
       categories: ["pessoal", "clone", "destaque"],
     },
     {
+      name: "VidFlow",
+      github: "https://github.com/eduardomendes117/VidFlow",
+      live: "https://vidflow-next.vercel.app/",
+      description: "Aplicação que automatiza as postagens de vídeo em Múltiplas Plataformas",
+      categories: ["pessoal"],
+    },
+    {
+      name: "Hot Burger",
+      github: "https://github.com/eduardomendes117/hot-burger",
+      live: "https://hot-burger-eduu.vercel.app/",
+      description: "Website de uma hamburgueria ficticia.",
+      categories: ["pessoal"],
+    },
+    {
       name: "Fokus",
       github: "https://github.com/eduardomendes117/fokus",
       live: "https://fokus-eduu.vercel.app/",
@@ -86,14 +100,14 @@ export default function Portfolio() {
       name: "Projeto Social",
       github: "https://github.com/eduardomendes117/projeto-social",
       live: "https://projetosocial-eduu.vercel.app/",
-      description: "Projeto Iframe Curso em Video.",
+      description: "Este projeto tem como objetivo demonstrar a utilização de iframes para integrar vídeos em uma página web de forma prática e responsiva.",
       categories: ["curso em video"],
     },
     {
       name: "Projeto Login",
       github: "https://github.com/eduardomendes117/projeto-login",
       live: "https://projetologin-eduu.vercel.app/",
-      description: "Desenvolvimento de uma tela de login simples, com validação de dados e redirecionamento após login bem-sucedido.",
+      description: "Desenvolvimento de uma tela de login simples",
       categories: ["curso em video"],
     },
     {
@@ -120,7 +134,7 @@ export default function Portfolio() {
     {
       name: "Calmaria Spa",
       github: "https://github.com/eduardomendes117/calmaria-spa",
-      live: "https://calmariashowcase-eduu.vercel.app/",
+      live: "https://calmaria-spa-eduu.vercel.app/",
       description: "Landing page de um spa fictício, com informações sobre serviços",
       categories: ["alura"],
     },
