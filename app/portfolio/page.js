@@ -48,6 +48,13 @@ export default function Portfolio() {
     //   categories: ["pessoal"],
     // },
     {
+      name: "Notes App",
+      github: "https://github.com/eduardomendes117/notes-app",
+      live: "https://notes-app-eduu.vercel.app/",
+      description: "Projeto Bloco de Notas.",
+      categories: ["pessoal", "next.js"],
+    },
+    {
       name: "Fokus",
       github: "https://github.com/eduardomendes117/fokus",
       live: "https://fokus-eduu.vercel.app/",
@@ -240,11 +247,11 @@ export default function Portfolio() {
 
                 <span className="flex gap-2">
                   {project.categories
-                    .filter((category) => category !== "destaque") // Exclui a categoria "destaque"
+                    .filter((category) => category !== "destaque")
                     .map((category) => (
                       <div
                         key={category}
-                        className="border border-blue-500 rounded-full px-2"
+                        className="flex items-center border border-blue-500 rounded-full pb-1 px-3"
                       >
                         {category}
                       </div>
