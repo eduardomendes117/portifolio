@@ -75,7 +75,7 @@ export default function Portfolio() {
     },
     {
       name: "Alura Play",
-      github: "https://github.com/eduardomendes117/alura-play",
+      github: "https://github.com/eduardomendes117/aluraplay",
       live: "https://aluraplay-eduu.vercel.app/",
       description:
         "Plataforma de vídeo streaming simulada, com exibição de vídeos educativos e interação com a interface do usuário.",
@@ -83,7 +83,7 @@ export default function Portfolio() {
     },
     {
       name: "Check List",
-      github: "https://github.com/eduardomendes117/check-list",
+      github: "https://github.com/eduardomendes117/checklist",
       live: "https://checklist-eduu.vercel.app/",
       description:
         "Aplicação de lista de tarefas simples, permitindo aos usuários adicionar, marcar e excluir tarefas de uma lista.",
@@ -107,7 +107,7 @@ export default function Portfolio() {
     },
     {
       name: "Alura Newsletter",
-      github: "https://github.com/eduardomendes117/alura-newsletter",
+      github: "https://github.com/eduardomendes117/aluranewsletter",
       live: "https://aluranewsletter-eduu.vercel.app/",
       description:
         "Criação de uma plataforma de boletins informativos para a Alura, permitindo aos usuários se inscreverem para receber atualizações.",
@@ -146,7 +146,7 @@ export default function Portfolio() {
     },
     {
       name: "Alura Plus",
-      github: "https://github.com/eduardomendes117/alura-plus",
+      github: "https://github.com/eduardomendes117/aluraplus",
       live: "https://aluraplus-eduu.vercel.app/",
       description:
         "Plataforma fictícia de vídeos educacionais que oferece cursos em diversos temas de programação e desenvolvimento.",
