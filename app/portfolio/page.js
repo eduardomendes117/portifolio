@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Switch from "@/components/Interruptor";
+import Switch from "@/components/Interruptor/";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { RiGithubLine } from "react-icons/ri";
 import { FaArrowLeft } from "react-icons/fa6";
@@ -44,20 +44,6 @@ export default function Portfolio() {
         "Landing page Xbox Series X",
       categories: ["pessoal"],
     },
-    // {
-    //   name: "VidFlow",
-    //   github: "https://github.com/eduardomendes117/VidFlow",
-    //   live: "https://vidflow-next.vercel.app/",
-    //   description: "Aplicação que automatiza as postagens de vídeo em Múltiplas Plataformas",
-    //   categories: ["pessoal"],
-    // },
-    // {
-    //   name: "Hot Burger",
-    //   github: "https://github.com/eduardomendes117/hot-burger",
-    //   live: "https://hot-burger-eduu.vercel.app/",
-    //   description: "Website de uma hamburgueria ficticia.",
-    //   categories: ["pessoal"],
-    // },
     {
       name: "Notes App",
       github: "https://github.com/eduardomendes117/notes-app",
@@ -249,7 +235,7 @@ export default function Portfolio() {
             .map((project) => (
               <motion.li
                 key={project.name}
-                className="rounded-xl border dark:border-black/20  border-white/50 hover:border-white w-96 p-5"
+                className="flex flex-col rounded-xl border dark:border-black/20  border-white/50 hover:border-white w-96 p-5"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
@@ -270,13 +256,13 @@ export default function Portfolio() {
                   {project.description}
                 </p>
 
-                <span className="flex gap-2">
+                <span className="flex gap-2 mt-auto">
                   {project.categories
                     .filter((category) => category !== "destaque")
                     .map((category) => (
                       <div
                         key={category}
-                        className="flex items-center border border-blue-500 rounded-full pb-1 px-3"
+                        className="flex items-center border border-blue-500 rounded-xl pb-1 px-3"
                       >
                         {category}
                       </div>

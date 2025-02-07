@@ -17,7 +17,7 @@ export default function Footer() {
           </Link>
         </ul>
         <p className="py-2 text-xs text-center">
-          &copy; {ano} MIT License .todos os direitos reservados
+          &copy; {ano} MIT License. Todos os direitos reservados
         </p>
       </div>
     </>
